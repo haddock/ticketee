@@ -20,6 +20,7 @@ end
 
 group :test do
 	gem 'cucumber-rails'
+	gem 'cucumber', '1.0.6'
 	gem 'capybara'
 	gem 'database_cleaner'
 end
