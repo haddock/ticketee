@@ -22,8 +22,9 @@ end
 group :test do
 	gem 'cucumber-rails'
 	gem 'cucumber', '1.0.6'
-	gem 'capybara'
+	gem 'capybara', '1.1.4'
 	gem 'database_cleaner'
 	gem 'factory_girl', '1.3.3'
 end
 
+gem 'devise', '~> 1.4.3'
