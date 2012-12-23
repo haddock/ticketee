@@ -25,6 +25,7 @@ group :test do
 	gem 'capybara', '1.1.4'
 	gem 'database_cleaner'
 	gem 'factory_girl', '1.3.3'
+	gem 'email_spec'
 end
 
 gem 'devise', '~> 1.4.3'
