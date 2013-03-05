@@ -1,8 +1,12 @@
 class Ticket < ActiveRecord::Base
   belongs_to :project
   belongs_to :user
-  attr_accessible :description, :title, :user, :asset
+  
+  has_many :assets
+  accepts_nested_attributes_for :assets
+
+  attr_accessible :description, :title, :user, :assets_attributes
+
   validates :title, :presence => true
   validates :description, :presence => true, :length => { :minimum => 10 }
-  has_attached_file :asset
 end
